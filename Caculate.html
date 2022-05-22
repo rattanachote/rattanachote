@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <p>Click on button to calculate.</p>
+    <label for="number1">Number 1</label><br>
+    <input type="number" id="number1">
+    <br>
+    <label for="number2">Number 2</label><br>
+    <input type="number" id="number2">
+    <br>
+    <button onclick = "Add()">Add</button>
+    <button onclick = "Subtract()">Subtract</button>
+    <button onclick = "Multiply()">Multiply</button>
+    <button onclick = "Divide()"> Divide</button>
+    <p id="out">0</p>
+    <script>
+            function Add() 
+            {
+                let number1 = Number(document.getElementById("number1").value);
+                let number2 = Number(document.getElementById("number2").value);
+                let output = document.getElementById("out");
+                output.innerText = number1 + number2;
+            }
+            function Subtract() {
+                    let number1 = Number(document.getElementById("number1").value);
+                    let number2 = Number(document.getElementById("number2").value);
+                    let output = document.getElementById("out");
+                    output.innerText = number1 - number2;
+                }
+            function Multiply() {
+                    let number1 = Number(document.getElementById("number1").value);
+                    let number2 = Number(document.getElementById("number2").value);
+                    let output = document.getElementById("out");
+                    output.innerText = number1 * number2;
+                }
+            function Divide() {
+                    let number1 = Number(document.getElementById("number1").value);
+                    let number2 = Number(document.getElementById("number2").value);
+                    let output = document.getElementById("out");
+                    output.innerText = number1 / number2;
+                }
+            
+    </script>
+</body>
